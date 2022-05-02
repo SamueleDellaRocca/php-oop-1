@@ -53,6 +53,11 @@ class Movie
         return $this->starMovie;
     }
 
+    public function getCambioPrezzo()
+    {
+        return $this->cambioPrezzo;
+    }
+
     public function setPrezzoBiglietto($_prezzoBiglietto)
     {
         $this->prezzoBiglietto = $_prezzoBiglietto;
@@ -71,6 +76,7 @@ $movieInterstellar->setPrezzoBiglietto(8);
 $movieInterstellar->setPrezzoBiglietto(9);
 var_dump($movieInterstellar);
 echo ("<h1>IL film è {$movieInterstellar->getTitolo()}, il suo attore principale è {$movieInterstellar->getStarMovie()}</h1>");
+echo ("<h2>Il prezzo del film è stato cambiato {$movieInterstellar->getCambioPrezzo()} volte</h2>");
 
 $movieBatMan = new Movie('BatMan', 'Nolan', 'Cristian Bale', 12);
 $movieBatMan->setLinguaOriginale('Inglese');
