@@ -70,8 +70,10 @@ $movieInterstellar->setPrezzoBiglietto(12);
 $movieInterstellar->setPrezzoBiglietto(8);
 $movieInterstellar->setPrezzoBiglietto(9);
 var_dump($movieInterstellar);
+echo ("<h1>IL film è {$movieInterstellar->getTitolo()}, il suo attore principale è {$movieInterstellar->getStarMovie()}</h1>");
 
 $movieBatMan = new Movie('BatMan', 'Nolan', 'Cristian Bale', 12);
 $movieBatMan->setLinguaOriginale('Inglese');
 $movieBatMan->setBudget('3 milioni');
 var_dump($movieBatMan);
+echo ("<h1>IL film è {$movieBatMan->getTitolo()}, il suo attore principale è {$movieBatMan->getStarMovie()}</h1>");
